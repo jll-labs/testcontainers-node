@@ -1,4 +1,6 @@
 timeout: 3000s
+options:
+  machineType: 'N1_HIGHCPU_8'
 steps:
 
   - name: 'gcr.io/jll-docker-repo/get-npmrc'
@@ -13,7 +15,7 @@ steps:
     args: ['run', 'build']
 
 
-  - name: 'gcr.io/jll-docker-repo/docker-node:12.14.1-6.13.4'
-    id: npm test
-    args: ['test']
+#  - name: 'gcr.io/jll-docker-repo/docker-node:12.14.1-6.13.4'
+#    id: npm test
+#    args: ['test']
 
