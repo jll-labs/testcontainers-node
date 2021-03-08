@@ -11,9 +11,9 @@ steps:
     args: ['run', 'build']
 
 
-  - name: 'gcr.io/jll-docker-repo/docker-node:12.14.1-6.13.4'
-    id: npm test
-    args: ['test']
+#  - name: 'gcr.io/jll-docker-repo/docker-node:12.14.1-6.13.4'
+#    id: npm test
+#    args: ['test']
 
   - name: 'gcr.io/cloud-builders/npm'
     id: publish to npm
