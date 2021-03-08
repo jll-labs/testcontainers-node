@@ -1,3 +1,4 @@
+timeout: 3000s
 steps:
 
   - name: 'gcr.io/jll-docker-repo/get-npmrc'
